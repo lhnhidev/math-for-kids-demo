@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('./root.css');
+
+body {
+    font-family: var(--font-family);
+}
+
+.main {
+    background-color: var(--yellow-color);
+}
+
+.container {
+    position: relative;
+    background-color: var(--red-color);
+    height: 100vh;
+    border-left: 30px solid var(--blue-color);
+    border-right: 30px solid var(--blue-color);
+}
+
+.container h1 {
+    text-align: center;
+    display: block;
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 56px;
+    width: 80%;
+    letter-spacing: 2px;
+
+}
+
+.play-btn {
+    display: block; 
+    font-size: 30px;
+    padding: 6px 24px;
+    border-radius: 14px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 20px;
+    transition: .3s;
+    color: var(--black-color);
+    background-color: var(--white-color);
+    text-decoration: none;
+}
+.play-btn:hover {
+    cursor: pointer;
+    background-color: var(--blue-color);
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+.play-btn:active {
+    background-color: var(--yellow-color);
+    color: var(--white-color);
+    transition: unset;
+}
+
+@media screen and (max-width: 500.98px) {
+    .container h1 {
+        font-size: 52px;
+        margin-top: 25px;
+    }
+
+    .play-btn {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 475.98px) {
+    .container h1 {
+        font-size: 46px;
+        margin-top: 25px;
+    }
+
+    .play-btn {
+        margin-top: 40px;
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 428.98px) {
+    .container h1 {
+        font-size: 38px;
+        margin-top: 30px;
+    }
+
+    .play-btn {
+        margin-top: 20px;
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 366.98px) {
+    .container h1 {
+        font-size: 30px;
+        margin-top: 30px;
+    }
+
+    .play-btn {
+        margin-top: 20px;
+        font-size: 20px;
+    }
+}
